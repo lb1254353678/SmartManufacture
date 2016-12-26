@@ -1,0 +1,103 @@
+<!--<ScrollView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+	<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+	<!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" -->
+    <!--android:scrollbars="none">-->
+<!--<LinearLayout-->
+    <!---->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" -->
+    <!--android:orientation="vertical">-->
+
+	<!--&lt;!&ndash; loading progress&ndash;&gt;-->
+	<!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+		<!--&lt;!&ndash;android:id="@+id/load_linear"&ndash;&gt;-->
+		<!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+		<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+		<!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+		<!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+		<!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+		<!--&lt;!&ndash;<ProgressBar&ndash;&gt;-->
+			<!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:layout_height="wrap_content" />&ndash;&gt;-->
+
+		<!--&lt;!&ndash;<TextView&ndash;&gt;-->
+			<!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:text="loading"&ndash;&gt;-->
+			<!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+			<!--&lt;!&ndash;/>&ndash;&gt;-->
+	<!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+	<!---->
+   <!---->
+<!--</LinearLayout>-->
+<!--</ScrollView>-->
+
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_linear"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/main_bg">
+	<!-- 最新资讯模块 -->
+	<FrameLayout
+		android:id="@+id/frame_news"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:padding="4dip"
+		android:orientation="horizontal">
+		<!-- 产量统计模块 -->
+		<FrameLayout
+			android:id="@+id/frame_chart"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="2" />
+		<View
+			android:layout_width="2dip"
+			android:layout_height="match_parent"
+			android:background="@color/news_bg"/>
+
+		<!-- 警报次数模块 -->
+		<FrameLayout
+			android:id="@+id/frame_alarm_times"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"/>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="2dip"
+		android:background="@color/news_bg"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:orientation="horizontal">
+		<!-- 产线站点模块 -->
+		<FrameLayout
+			android:id="@+id/frame_site_layout"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="2.5"/>
+		<!-- 注释模块 -->
+		<FrameLayout
+			android:id="@+id/frame_notes"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"/>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- #6d6d6d灰 -->
+    <!-- #ea8010橙 -->
+    <!-- #1ec80b绿 -->
+    <!-- #e82810红 -->
+    <color name="colorPrimary">#F26531</color>
+    
+    <color name="news_bg">#D3D3D3</color>
+    <color name="main_bg">#3C3C3C</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#88BA55</color>
+    <color name="blue">#1EB1ED</color>
+    <color name="gray">#4C4C4C</color>
+    <color name="red">#e82810</color>
+    <color name="yellow">#FCFD37</color>
+</resources>

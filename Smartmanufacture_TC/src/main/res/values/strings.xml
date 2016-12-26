@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">推车智能制造</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- 登录界面 -->
+    <string name="login_version">推车智能制造客户端V</string>
+    <string name="login_name">手机号</string>
+    <string name="login_psw">密码</string>
+    <string name="login_remeber_psw">记住密码</string>
+    <string name="login_auto">自动登录</string>
+    <string name="btn_login">登录</string>
+    <string name="txt_login_error">登录异常?</string>
+    <string name="login_progressing">登录中...</string>
+    <string name="toast_login_name_null">手机号不能为空</string>
+    <string name="toast_login_psw_null">密码不能为空</string>
+	<string name="toast_login_success">登录成功！</string>
+    <string name="toast_login_failed">手机号或密码不正确！</string>
+    <string name="toast_login_exception">登录出现异常！</string>
+    <string name="toast_login_no_network">网络异常！</string>
+    
+    
+    <string name="load_progressing">加载中...</string>
+    
+    <string name="in_day">当日累计</string>
+    <string name="in_lasthour">最近小时</string>
+    
+    <string name="real">实际</string>
+    <string name="standard">标准</string>
+    <string name="target">目标</string>
+    <string name="time">时间</string>
+    
+    <string name="count_real">实际数量</string>
+    <string name="count_target">目标数量</string>
+    <string name="count_exception">异常数量</string>
+    
+    <string name="efficiency">效率</string>
+    <string name="pph">PPH</string>
+    
+    
+    
+    <string name="no_news">暂无最新资讯</string>
+    <string name="select_xb">选择线别</string>
+    <string name="ChartDetailFragment">总装一车间装配一线效率</string>
+    <string name="SiteLayoutDetailFragment_1">总装一车间装配一线</string>
+    <string name="SiteLayoutDetailFragment_2">站点信息</string>
+    <string name="WarningCountQuantityDetailFragment">质量异常</string>
+    <string name="WarningCountMaterialDetailFragment">物料异常</string>
+    <string name="WarningCountBeatWarningDetailFragment">节拍异常</string>
+    
+    <string name="BeatWarning">节拍异常</string>
+    <string name="QuantityWarning">质量异常</string>
+    <string name="Materialarning">物料异常</string>
+    
+    <string name="version_update_title">版本更新</string>
+    <string name="version_update_message">发现新版本，建议立即更新</string>
+    <string name="version_update_cancel">取消</string>
+    <string name="version_update_submit">确定</string>
+    
+    <string name="download_begin">开始下载</string>
+    <string name="download_loading">正在下载 </string>
+    
+    
+</resources>

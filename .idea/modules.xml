@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MVPTest/MVPTest.iml" filepath="$PROJECT_DIR$/MVPTest/MVPTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartManufacture.iml" filepath="$PROJECT_DIR$/SmartManufacture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Smartmanufacture_TC/Smartmanufacture_TC.iml" filepath="$PROJECT_DIR$/Smartmanufacture_TC/Smartmanufacture_TC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+    </modules>
+  </component>
+</project>
