@@ -9,9 +9,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/GBSmartPush" />
             <option value="$PROJECT_DIR$/MVPTest" />
             <option value="$PROJECT_DIR$/Smartmanufacture_TC" />
-            <option value="$PROJECT_DIR$/Test" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

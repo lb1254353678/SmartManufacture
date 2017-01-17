@@ -1,1 +1,1 @@
-include ':Test', ':Smartmanufacture_TC', ':MVPTest'
+include ':Smartmanufacture_TC', ':MVPTest', ':GBSmartPush'
