@@ -8,4 +8,69 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.TabLayout">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="btnTheme_focus">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="btnTheme_normal">
+        <item name="android:background">@color/colorGray</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="linearlayout_vertical" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="linearlayout_horizontal" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="dateStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 </resources>

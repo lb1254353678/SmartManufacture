@@ -13,6 +13,17 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        //以下为设置JPush时设置的
+        ndk{
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "b0e5729e0aaea282c3afd004", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+
     }
     buildTypes {
         release {
@@ -20,13 +31,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:24.2.1'
+    compile 'cn.jiguang:jpush:2.1.8'
+    compile 'cn.jpush.api:jiguang-common:1.0.2'
 }
