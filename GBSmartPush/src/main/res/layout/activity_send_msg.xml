@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_send_msg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.goodbaby.push.SendedMsgActivity">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        style="@style/gbProgressDialog"/>
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.CardContent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+                        <EditText
+                            android:id="@+id/et_to_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dip"
+                            android:text=""
+                            android:textSize="14sp"
+                            android:hint="你要推送的人"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorGray"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                    <EditText
+                        android:id="@+id/et_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:hint="你要推送的内容"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发送"
+                android:textColor="@color/colorWhite"
+                android:padding="4dip" />
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--style="@style/linearlayout_vertical">-->
+                <!---->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

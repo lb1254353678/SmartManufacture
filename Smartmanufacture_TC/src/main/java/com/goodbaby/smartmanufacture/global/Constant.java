@@ -15,7 +15,7 @@ public class Constant {
 	/**
 	 * 登录账号数据库名
 	 */
-	public static final String INITIALCATALOG_SYSLOG = "Syslog";
+	public static final String INITIALCATALOG_SYSLOG = "SysLog";
 
 	public static final String TEL = "tel";
 	public static final String PASSWORD = "password";

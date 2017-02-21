@@ -27,8 +27,8 @@ public class MyApplication extends Application{
         mSharePreferences = getSharedPreferences(getString(R.string.app_name),MODE_PRIVATE);
         lastLoginInfo();
 
-        CrashReport.initCrashReport(getApplicationContext(), "fbc984938f", false);
-        PgyCrashManager.register(getApplicationContext());
+        CrashReport.initCrashReport(getApplicationContext(), "fbc984938f", false);//腾讯Bugly Crash模块
+        PgyCrashManager.register(getApplicationContext());//蒲公英Crash模块
 
     }
 

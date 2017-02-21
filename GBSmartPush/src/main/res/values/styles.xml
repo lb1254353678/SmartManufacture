@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorDark</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
     </style>
 
     <style name="AppTheme.TabLayout">
@@ -25,9 +27,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="btnTheme_focus">
+    <style name="btnTheme_focus" parent="AppTheme">
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:padding">4dip</item>
     </style>
 
     <style name="btnTheme_normal">
@@ -39,15 +42,15 @@
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingRight">16dp</item>
         <item name="android:paddingTop">16dp</item>
-        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingBottom">16dp</item>
         <item name="android:orientation">vertical</item>
     </style>
 
     <style name="linearlayout_vertical" parent="android:Widget">
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:paddingTop">8dp</item>
-        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
         <item name="android:orientation">vertical</item>
     </style>
 
@@ -72,5 +75,18 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!--<style name="MyProgressBar" parent="Base.Widget.AppCompat.ProgressBar">-->
+        <!--<item name="roundC"></item>-->
+    <!--</style>-->
+    <style name="gbProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="gbButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorDark</item>
+    </style>
 
 </resources>

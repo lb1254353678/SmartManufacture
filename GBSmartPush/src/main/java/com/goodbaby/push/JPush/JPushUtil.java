@@ -1,11 +1,12 @@
 package com.goodbaby.push.JPush;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-import com.goodbaby.push.application.GBApplication;
+import com.goodbaby.push.global.GBApplication;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -18,6 +19,7 @@ import cn.jpush.android.api.TagAliasCallback;
  */
 
 public class JPushUtil {
+    private GBApplication gbApplication;
     private static final int MSG_SET_ALIAS = 1001;
     private static final int MSG_SET_TAG = 1002;
     private final static Handler myHandler = new Handler(){
@@ -27,7 +29,7 @@ public class JPushUtil {
             switch (msg.what){
                 case MSG_SET_ALIAS:
                     Log.d("flo", "Set alias in handler.");
-                    // 调用 JPush 接口来设置别名。
+                    // 调用 JPush 接口来设置别名。GBApplication.getAppContext().getApplicationContext()
                     JPushInterface.setAliasAndTags(GBApplication.getAppContext().getApplicationContext(), (String) msg.obj, null, mAliasCallback);
                     break;
                 case MSG_SET_TAG:
@@ -56,10 +58,8 @@ public class JPushUtil {
      * @param alias 别名
      */
     public static void initJPushAlias(final Context context, String alias) {
-
         initJPush(context);
-        //JPushInterface.setAliasAndTags(context.getApplicationContext(), alias, null, mAliasCallback);
-        JPushInterface.setAlias(context.getApplicationContext(), alias, mAliasCallback);
+        JPushInterface.setAliasAndTags(context.getApplicationContext(), alias, null, mAliasCallback);
     }
 
     /**
@@ -73,8 +73,7 @@ public class JPushUtil {
             return;
         }
         initJPush(context);
-        //JPushInterface.setAliasAndTags(context, null, tag, mTagCallBack);
-        JPushInterface.setTags(context, tag, mTagCallBack);
+        JPushInterface.setAliasAndTags(context, null, tag, mTagCallBack);
     }
 
 
@@ -82,11 +81,16 @@ public class JPushUtil {
         @Override
         public void gotResult(int code, String s, Set<String> set) {
             Log.e("flo", "call back executing....");
+            Log.e("code","" + code);
+
             String logs;
             switch (code) {
                 case 0:
                     logs = "Set tag and alias success";
                     Log.i("flo", logs);
+
+
+
                     break;
                 case 6002:
                     logs = "Failed to set alias and tags due to timeout. Try again after 30s.";
