@@ -97,7 +97,6 @@ public class JPushMessageReciver extends BroadcastReceiver {
 //            使用普通通知的开发者不需要配置此 receiver action。
 //            只有开发者使用了 MultiActionsNotificationBuilder 构建携带按钮的通知栏的通知时，可通过该 action 捕获到用户点击通知栏按钮的操作，并自行处理。
 
-
         }else if(JPushInterface.ACTION_RICHPUSH_CALLBACK.equals(intent.getAction())){
 
             Log.e(TAG, "ACTION_RICHPUSH_CALLBACK");

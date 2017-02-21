@@ -10,7 +10,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/GBSmartPush" />
-            <option value="$PROJECT_DIR$/MVPTest" />
             <option value="$PROJECT_DIR$/Smartmanufacture_TC" />
           </set>
         </option>

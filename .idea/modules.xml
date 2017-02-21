@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GBSmartPush/GBSmartPush.iml" filepath="$PROJECT_DIR$/GBSmartPush/GBSmartPush.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MVPTest/MVPTest.iml" filepath="$PROJECT_DIR$/MVPTest/MVPTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/SmartManufacture.iml" filepath="$PROJECT_DIR$/SmartManufacture.iml" />
       <module fileurl="file://$PROJECT_DIR$/Smartmanufacture_TC/Smartmanufacture_TC.iml" filepath="$PROJECT_DIR$/Smartmanufacture_TC/Smartmanufacture_TC.iml" />
     </modules>
