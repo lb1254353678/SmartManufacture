@@ -11,7 +11,7 @@ public class Constant {
     public static final String REM_PSW = "rem_psw";
     public static final String AUTO_LOGIN = "auto_login";
 
-    public static final String HOSTNAME = "http://10.179.161.10:8080/";
+    public static final String HOSTNAME = "http://172.16.233.22:8080/";
     public static final String HOSTNAME_STAFF = "http://10.179.160.72:8080/";
 
     public static final String URL_LOGIN = HOSTNAME + "GBPushServer/user/LoginServlet";
